@@ -20,9 +20,24 @@
  * You entered 2 grades. The average is 72.5
  */
 
-public class Grades {
-  public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
+        // TODO code application logic here
+        
+                int count;
+        double sum = 0;
+        double grades;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter number of grades: ");
+        count = scan.nextInt();
+        for (int i = 0; i < count; ++i)
+            System.out.print("\n"+" Enter grade " + (i + 1) + ": " );
+            grades = scan.nextDouble();
+            sum += grades;
+        System.out.println("The average of the grades is: " + sum/count);
+        
+        
+        
+    }
     
-  }
-
 }
